@@ -466,10 +466,20 @@ footer{
         top: 50%;
         right: 5%;
    }
+   .reverse{
+    z-index: 1;
+   }
    .ilustration {
     left: 10%;
     top: 180px;
     width: 550px;
-    height: 280px;
+    height: 280px; 
+    animation-name: inflate;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
 }
+    @keyframes inflate {
+        25% {transform: scale(150%)}
+        50% {transform:rotate(45deg)}
+    }
 }
