@@ -99,6 +99,10 @@ button{
     width: 150px;
     height: 50px;
 }
+button:hover{
+    color: var(--rojo-brillante);
+    background-color: var(--rojo-muy-pálido);
+}
 
 /* ---------------  MAIN ---------------------- */
 
@@ -180,7 +184,7 @@ section {
 .main-bottom{
     background-color: var(--rojo-brillante);
     margin-top: 50px;
-    width: 100vw;
+    width: 100%;
     min-height: 350px;
     display: flex;
     flex-direction: column;
@@ -254,6 +258,13 @@ footer{
     font-size: 14px;
     line-height: 30px;
 }
+.list ul li a{
+    text-decoration: none;
+    color: var(--variante-gris-claro);
+}
+.list ul li a:hover{
+    color: var(--rojo-brillante)
+}
 .images {
     margin-top: 40px;
     display: flex;
@@ -295,6 +306,7 @@ footer{
 @media(min-width:769px) {
     header{
         margin: 0% 10% 0% 10%;
+        padding-top: 30px;
     }
     .navbar{
         justify-content: space-between;
@@ -310,6 +322,13 @@ footer{
         font-size: 12px;
         color: var(--azul-oscuro);
         gap: 8px;
+    }
+    .navbar ul li a{
+        text-decoration:none;
+        color: var(--azul-oscuro);
+    }
+    .navbar ul li a:hover{
+        color: var(--rojo-brillante);
     }
     .navbar button{
         margin: 0px;
@@ -404,26 +423,53 @@ footer{
         text-align: left;
     }
     footer{
-        /* flex-direction: row;
-        flex-wrap: wrap; */
+        position: relative;
+        min-height: 300px;
     }
     .footer-logo{
-        order:1;
-        min-width: 28%;
+        position: absolute;
+        top: 0;
+        left: 6%;
+    }
+    .footer-logo img{
+        width: 15vw;
+        height: auto;
     }
     .list{
-        order:2;
-        min-width: 30%;
+        position: absolute;
+        width: 30vw;
+        right: 40%;
+        top: 0;
+    }
+    .list ul li{
+       padding: 12px;
     }
     .footer-input{
-        order:3;
-        min-width: 28%;
+        position: absolute;
+        top: 0;
+        right: 3%;
+        width: 30vw;
     }
    .images{
-    order: 4;
-    justify-content: left;
+        position: absolute;
+        top: 50%;
+        left: 5%;
    }
+   .images ul li img{
+        height: 4vw;
+   }
+   .images ul li img:hover{
+        background-color:var(--rojo-salmón)
+    }
    .logo-copyright{
-    order:5;
+        position: absolute;
+        top: 50%;
+        right: 5%;
    }
+   .ilustration {
+    left: 10%;
+    top: 180px;
+    width: 550px;
+    height: 280px;
+}
 }
