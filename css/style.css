@@ -102,6 +102,7 @@ button{
 button:hover{
     color: var(--rojo-brillante);
     background-color: var(--rojo-muy-pálido);
+    border: 2px var(--rojo-brillante) solid;
 }
 
 /* ---------------  MAIN ---------------------- */
@@ -230,16 +231,24 @@ footer{
     justify-content: center;
 }
 .footer-input input{
-    font-weight: 700;
+    font-weight: 400;
+    font-size: 20px;
     border-style: none;
     border-radius: 25px;
     width: 250px;
     height: 50px;
+    outline: none;
+}
+.footer-input input:focus{
+    padding-left: 5%;
 }
 .footer-input input::placeholder{
     text-align: left;
     padding-left: 30px;
     color: var(--azul-grisáceo-oscuro);
+}
+.footer-input input:focus::placeholder{
+    color: white;
 }
 .footer-input button{
     box-shadow: none;
@@ -263,7 +272,8 @@ footer{
     color: var(--variante-gris-claro);
 }
 .list ul li a:hover{
-    color: var(--rojo-brillante)
+    color: var(--rojo-brillante);
+    
 }
 .images {
     margin-top: 40px;
@@ -458,8 +468,26 @@ footer{
    .images ul li img{
         height: 4vw;
    }
-   .images ul li img:hover{
-        background-color:var(--rojo-salmón)
+ 
+    .images ul li img:hover{
+        animation-name: spin;
+        animation-duration: 4s;
+        border-radius: 40%;
+    }
+    #Fb-logo img:hover{
+        background-color: rgb(66 103 178);
+    }
+    #Ytb-logo img:hover{
+        background-color: rgb(255 0 0);
+    }
+    #Twtt-logo img:hover{
+        background-color: rgb(29 161 242);
+    }
+    #Pnt-logo img:hover{
+        background-color: rgb(230 0 35);
+    }
+    #Int-logo img:hover{
+        background: linear-gradient(45deg, #FFDC80, #FCAF45, #F77737, #F56040, #FD1D1D, #E1306C, #C13584, #833AB4, #5B51D8, #405DE6);
     }
    .logo-copyright{
         position: absolute;
@@ -479,7 +507,12 @@ footer{
     animation-iteration-count: infinite;
 }
     @keyframes inflate {
-        25% {transform: scale(150%)}
+        10% {transform: scale(150%)}
         50% {transform:rotate(45deg)}
     }
+    @keyframes spin {
+        20% {transform: scale(50%);}
+        40% {transform: rotate(180deg);}
+        60% {transform: scale(150%);}
+        }
 }
