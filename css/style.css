@@ -1,4 +1,3 @@
-/* IPHONE SE (MOBILE) */
 *{
     margin: 0px;
     padding: 0px;
@@ -15,16 +14,22 @@
     --rojo-muy-pálido: rgb(255, 239, 234);
     --variante-gris-claro: rgb(249, 249, 249);
 }
+
+/* **************************************** */
+/* --------IPHONE SE (MOBILE-FIRST) --------*/
+/* **************************************** */
+
 body {
     font-family: 'Be Vietnam Pro', sans-serif;
     font-size: 16px; 
 
 }
+
+/* MOBILE------------ HEADER ------------- */
+
 header {
     margin-top: 45px;
 }
-
-/*------------ NAV ------------- */
 .navbar {
     display: flex;
     margin: 20px;
@@ -98,6 +103,7 @@ button{
     box-shadow: 0px 30px 70px -5px var(--rojo-brillante);
     width: 150px;
     height: 50px;
+    transition: color 100ms, background-color 1500ms;
 }
 button:hover{
     color: var(--rojo-brillante);
@@ -105,7 +111,7 @@ button:hover{
     border: 2px var(--rojo-brillante) solid;
 }
 
-/* ---------------  MAIN ---------------------- */
+/* MOBILE ------------  MAIN ----------------- */
 
 main {
     margin-top: 80px;
@@ -217,7 +223,7 @@ section {
     box-shadow: none;
 }
 
-/* ----------------- FOOTER  ---------------------- */
+/* MOBILE ------------- FOOTER  ------------ */
 
 footer{
     background-color: var(--azul-muy-oscuro);
@@ -270,6 +276,7 @@ footer{
 .list ul li a{
     text-decoration: none;
     color: var(--variante-gris-claro);
+    transition: color 1000ms;
 }
 .list ul li a:hover{
     color: var(--rojo-brillante);
@@ -311,9 +318,14 @@ footer{
     margin-bottom: 25px;
 }
 
+/* ******************************** */
 /*--------- DESKTOP STYLE ----------*/
+/* ******************************** */
 
 @media(min-width:769px) {
+
+/* DESKTOP------------ HEADER ------------- */
+
     header{
         margin: 0% 10% 0% 10%;
         padding-top: 30px;
@@ -329,9 +341,9 @@ footer{
     .navbar ul{
         display: flex;
         list-style: none;
-        font-size: 12px;
+        font-size: 14px;
         color: var(--azul-oscuro);
-        gap: 8px;
+        gap: 10px;
     }
     .navbar ul li a{
         text-decoration:none;
@@ -373,6 +385,9 @@ footer{
         margin-top:10%;
         align-self: flex-start;
     }
+
+/* DESKTOP ------------  MAIN ----------------- */
+
     .main-container {    
         margin: 0% 10% 0% 10%; 
         display: flex;  
@@ -428,10 +443,22 @@ footer{
         flex-direction: row;
         justify-content: space-around;
     }
+    .ilustration {
+        left: 10%;
+        top: 180px;
+        width: 550px;
+        height: 280px; 
+        animation-name: inflate;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+    }
     .main-bottom p{
         max-width: 500px;
         text-align: left;
     }
+
+/* DESKTOP ------------- FOOTER  ------------ */
+
     footer{
         position: relative;
         min-height: 300px;
@@ -497,15 +524,7 @@ footer{
    .reverse{
     z-index: 1;
    }
-   .ilustration {
-    left: 10%;
-    top: 180px;
-    width: 550px;
-    height: 280px; 
-    animation-name: inflate;
-    animation-duration: 5s;
-    animation-iteration-count: infinite;
-}
+   
     @keyframes inflate {
         10% {transform: scale(150%)}
         50% {transform:rotate(45deg)}
