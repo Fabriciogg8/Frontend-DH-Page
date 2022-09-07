@@ -1,3 +1,75 @@
+# Digital House Frontend I - Final Exam
+
+<a name="top"></a>
+
+## [English](#item1)
+## [Español](#item2)
+
+ 
+<a name="item1"></a>
+
+### English
+ 
+#### Used technology: HTML, CSS
+
+##### Abstract
+
+Development of a web page, from a model.
+
+## The challenge
+
+Your challenge is to create this landing page and make it look as close to the design as possible.
+
+Your users could be able to:
+
+- See the optimal layout for the site based on the screen size of your device
+- The aspects that we will take into account for the correction will be the following:
+         -Correct HTML structure
+         -Use and correct implementation of semantic labels
+         -Adaptability to two types of devices
+         -Correct implementation of the form
+         -Images, icons, fonts, background
+         -Flexbox Implementation
+         -Good Practices in CSS
+         -Pseudoelements and Pseudoclasses
+         -(optional) ---> Small animations
+
+## Where to find everything
+
+Your task is to build the project with the layouts inside the `/layout` folder. You will find a mobile and desktop version of the design.
+
+The mobile design is in static JPG format. If you want to make aesthetic changes you can do it to your liking
+
+Link to Figma is added [https://www.figma.com/file/3PSyK3KYcmvbwK2OVFjFWm/Nico-Digital?node-id=4%3A2], with the previous sentence a reference is made that you should not always pay attention to everything that this tool tells us.
+
+You will find all the necessary resources in the `/images` folder. The assets are already optimized.
+
+There is also a `style-guide.md` file that contains the necessary information, such as the color palette and fonts.
+
+## Building your project
+
+Feel free to use whatever workflow you feel comfortable with. Here is a suggested process:
+
+1. Review the designs to begin planning how you will approach the project. This step is crucial to help you think ahead for CSS classes to create reusable styles.
+2. Before adding any styling, structure your content with HTML. Writing your HTML first can help you focus your attention on creating well-structured content.
+3. Write the base styles for your project, including general content styles such as `font-family` and `font-size`.
+4. Start adding styles at the top of the page and work your way down.
+5. Leave comments in the code in case you think it is necessary
+
+## Sending your solution
+
+Submit your solution in the attached google forms in PG, please attach a ZIP file.
+
+<a name="item2"></a>
+
+### Español
+
+#### Tecnologías utilizadas: HTML, CSS
+
+##### Resumen
+
+Desarrollo de una página web, a partir de un modelo. 
+
 ## El reto
 
 Su desafío es crear esta página de destino y hacer que se parezca lo más posible al diseño.
@@ -16,9 +88,10 @@ Sus usuarios deberían poder:
          -Pseudoelementos y Pseudoclases 
          -(opcional) ---> Pequeñas animaciones
 
+
 ## Dónde encontrar todo
 
-Su tarea es construir el proyecto con los diseños dentro de la carpeta `/ diseño`. Encontrará una versión móvil y de escritorio del diseño.
+Su tarea es construir el proyecto con los diseños dentro de la carpeta `/layout`. Encontrará una versión móvil y de escritorio del diseño.
 
 El diseño para mobile esta en formato estático JPG. Si desea hacerle cambios esteticos lo puede hacer a su gusto 
 
